@@ -1,0 +1,146 @@
+.container {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 90%,rgb(24, 22, 22,1)), /* Градиент */ url("/assets/images/cheetah.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 9% 12% 0 12%;
+  box-sizing: border-box;
+  row-gap: 80px;
+}
+
+.title {
+  font-size: 80px;
+  font-weight: 700;
+  color: #fff;
+  text-wrap: wrap;
+}
+
+.line {
+  width: 11px;
+  rotate: 10deg;
+  background-color: #FFBB00;
+  margin: 9px 0;
+
+}
+
+.subtitle-block {
+  display: flex;
+  column-gap: 21px;
+  color: #fff;
+}
+
+.subtitle {
+  line-height: 31px;
+}
+
+.btn {
+  &:hover {
+    background: rgb(255, 211, 96);
+
+  }
+
+  &:active {
+    background: rgb(239, 176, 0);
+
+  }
+
+  padding: 25px 30px 25px 30px;
+  border-radius: 47px;
+  background: rgb(255, 187, 0);
+  transition: ease-in-out .1s;
+  border: none;
+  outline: navajowhite;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-wrap: nowrap;
+  color: rgb(58, 30, 7);
+  font-family: Unbounded;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.info-block {
+  display: flex;
+  column-gap: 49px;
+  justify-content: space-between;
+}
+
+.info-block-left {
+  display: flex;
+  column-gap: 49px;
+  align-items: center;
+}
+
+.info-block-right {
+  display: flex;
+  column-gap: 49px;
+}
+
+.info-block-item {
+  display: flex;
+  /*flex-direction: column;*/
+  column-gap: 29px;
+  background-color: #fff;
+  border-radius: 35px;
+  justify-content: center;
+  align-items: center;
+  padding: 55px 45px;
+  box-sizing: border-box;
+}
+
+.item-icon {
+  padding: 10px;
+  background-color: #FFB618;
+  border-radius: 9px;
+}
+
+.item-content {
+  color: #3A1E07;
+  font-family: Muller;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-title {
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+item-subtitle {
+  font-size: 24px;
+}
+
+.block-footer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 26px;
+}
+
+.block-footer-title {
+  color: #FFBB00;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.white {
+  color: #fff;
+}
+
+.block-footer-subtitle {
+  font-size: 24px;
+  text-align: center;
+  font-family: Muller;
+  font-weight: 400;
+}
+

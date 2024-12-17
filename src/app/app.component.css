@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background: rgb(24, 22, 22);
+  height: 100vh;
+  font-family: var(--unbounded), sans-serif;
+
+}
+
+/*.header {*/
+/*}*/
+
+.content {
+  flex: 1;
+}
+
+/*.footer {*/
+/**/
+/*}*/

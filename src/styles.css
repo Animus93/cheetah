@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('assets/fonts/Muller/stylesheet.css');
+
+@font-face {
+  font-family: "Unbounded";
+  src: url("assets/fonts/Unbounded/Unbounded-VariableFont_wght.ttf");
+}
+
+:root {
+  --unbounded: "Unbounded";
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
