@@ -1,9 +1,9 @@
 .container {
-  padding: 4% 12%;
+  padding: 4% 12% 0 12%;
   box-sizing: border-box;
 }
 
-.content {
+.pricing {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -15,7 +15,7 @@
   flex: 1 1;
   background-size: contain;
   background-position: center;
-  background: url("/assets/images/empty-road.svg") fixed;
+  background: url("../../../assets/images/empty-road.svg") fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -66,10 +66,78 @@ img {
   justify-content: center;
   align-items: center;
   padding: 20px 38px;
-  background: #FFBB00;
+  background: var(--accent-color);
   border-radius: 14px;
   position: absolute;
   left: 111px;
   bottom: 76px;
   z-index: 1;
+}
+
+.block {
+  padding: 7% 12% 0 12%;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 90%, rgb(24, 22, 22, 1)), /* Градиент */ url("../../../assets/images/car_on_truck.svg");
+  background-size: cover;
+  /*background-position: center;*/
+}
+
+.block-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 40px;
+  padding: 0 7%;
+}
+
+.block-form {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 70px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.form-input {
+  border: none;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background-color: #ECEBEB;
+  outline: none;
+  max-width: 330px;
+  width: 100%;
+  min-height: 80px;
+  resize: vertical;
+  max-height: 250px;
+}
+
+.block-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 52px;
+  color: #ffffff;
+  max-width: 622px;
+  width: 100%;
+}
+
+.block-info-title {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.block-info-subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: Muller;
+  line-height: 30px;
+}
+
+.accent {
+  color: var(--accent-color);
+}
+
+.bold {
+  font-weight: 700;
 }

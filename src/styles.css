@@ -7,6 +7,7 @@
 
 :root {
   --unbounded: "Unbounded";
+  --accent-color: #FFBB00
 }
 
 html, body {
@@ -16,4 +17,29 @@ html, body {
 
 a {
   text-decoration: none;
+}
+.btn {
+  &:hover {
+    background: rgb(255, 211, 96);
+
+  }
+
+  &:active {
+    background: rgb(239, 176, 0);
+
+  }
+
+  padding: 25px 30px 25px 30px;
+  border-radius: 47px;
+  background: rgb(255, 187, 0);
+  transition: ease-in-out .1s;
+  border: none;
+  outline: navajowhite;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-wrap: nowrap;
+  color: rgb(58, 30, 7);
+  font-family: Unbounded;
+  font-size: 1.125rem;
+  font-weight: 700;
 }

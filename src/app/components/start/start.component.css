@@ -1,5 +1,5 @@
 .container {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 90%,rgb(24, 22, 22,1)), /* Градиент */ url("/assets/images/cheetah.svg");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 90%,rgb(24, 22, 22,1)), /* Градиент */ url("../../../assets/images/cheetah.svg");
   background-size: cover;
   background-position: center;
 }
@@ -28,7 +28,7 @@
 .line {
   width: 11px;
   rotate: 10deg;
-  background-color: #FFBB00;
+  background-color:var(--accent-color);
   margin: 9px 0;
 
 }
@@ -43,31 +43,7 @@
   line-height: 31px;
 }
 
-.btn {
-  &:hover {
-    background: rgb(255, 211, 96);
 
-  }
-
-  &:active {
-    background: rgb(239, 176, 0);
-
-  }
-
-  padding: 25px 30px 25px 30px;
-  border-radius: 47px;
-  background: rgb(255, 187, 0);
-  transition: ease-in-out .1s;
-  border: none;
-  outline: navajowhite;
-  cursor: pointer;
-  box-sizing: border-box;
-  text-wrap: nowrap;
-  color: rgb(58, 30, 7);
-  font-family: Unbounded;
-  font-size: 1.125rem;
-  font-weight: 700;
-}
 
 .info-block {
   display: flex;
@@ -127,7 +103,7 @@ item-subtitle {
 }
 
 .block-footer-title {
-  color: #FFBB00;
+  color: var(--accent-color);
   font-size: 48px;
   font-weight: 700;
   text-align: center;
