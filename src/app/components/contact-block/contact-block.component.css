@@ -1,33 +1,41 @@
 .container {
-  position: relative;
   background-color: #ffffff;
+
+}
+
+.wrapper {
+  width: 100%;
+  max-width: var(--max-width);
   overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  background: url("../../../assets/images/operator.svg") no-repeat right bottom;
+  background-size: 65%;
 }
 
 .operator {
-  background: url("../../../assets/images/operator.svg");
   position: absolute;
   right: -300px;
-  bottom: 0;
+  bottom: -50px;
   height: 100%;
   width: 100%;
-  background-size: contain;
-  background-position: right top;
-  background-repeat: no-repeat;
+  /*background-size: contain;*/
+  /*background-position: right top;*/
+  /*background-repeat: no-repeat;*/
 }
 
 .content {
   display: flex;
   flex-direction: column;
   row-gap: 98px;
-  padding: 9% 7%;
+  padding: 171px 133px;
   box-sizing: border-box;
 }
 
 .block {
   display: flex;
   /*flex-wrap: wrap;*/
-  column-gap: 69px;
+  gap: 69px;
   z-index: 1;
 }
 
@@ -49,11 +57,17 @@
   font-weight: 400;
   line-height: 140%;
   /*width: 325px;*/
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  border-radius: 40px;
+  box-sizing: border-box;
+  height: fit-content;
 }
 
 .form {
   display: flex;
-  column-gap: 36px;
+  flex-wrap: wrap;
+  gap: 36px;
   padding: 40px 50px;
   box-sizing: border-box;
   border-radius: 23px;
@@ -90,3 +104,32 @@
   font-weight: 400;
 }
 
+@media (max-width: 1210px) {
+  .block {
+    flex-wrap: wrap;
+  }
+  .wrapper {
+    background-size: 100%;
+  }
+  .content {
+    padding: 171px 24px;
+  }
+}
+@media (max-width: 760px) {
+  .form {
+    justify-content: center;
+  }
+}
+@media (max-width: 460px) {
+  .form {
+    padding: 10px;
+  }
+  .title {
+    font-size: 10vw;
+  }
+  .form-input {
+    padding: 24px;
+  }
+
+  }
+}

@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   overflow: hidden;
+  padding-bottom: 7%;
 }
 
 .slider-wrapper {
@@ -10,6 +11,17 @@
   max-width: 1000px;
   width: 100%;
   align-self: center;
+  position: relative;
+}
+
+.prev {
+  position: absolute;
+  left: 100px;
+}
+
+.next {
+  position: absolute;
+  right: 100px;
 }
 
 .slider {
@@ -55,3 +67,12 @@
   background: rgba(58, 30, 7, 0.68);
 }
 
+@media (max-width: 1210px) {
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+}

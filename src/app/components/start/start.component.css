@@ -1,11 +1,12 @@
 .container {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 90%,rgb(24, 22, 22,1)), /* Градиент */ url("../../../assets/images/cheetah.svg");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 90%, rgb(24, 22, 22, 1)), /* Градиент */ url("../../../assets/images/cheetah.svg");
   background-size: cover;
   background-position: center;
+
 }
 
 .header {
-  padding: 0 24px;
+  padding: 10px 24px;
   box-sizing: border-box;
 }
 
@@ -13,9 +14,13 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 9% 12% 0 12%;
+  /*padding: 9% 12% 0 12%;*/
+  padding: 170px 220px 0 200px;
   box-sizing: border-box;
   row-gap: 80px;
+  max-width: var(--max-width);
+  width: 100%;
+  margin: 0 auto;
 }
 
 .title {
@@ -28,7 +33,7 @@
 .line {
   width: 11px;
   rotate: 10deg;
-  background-color:var(--accent-color);
+  background-color: var(--accent-color);
   margin: 9px 0;
 
 }
@@ -44,10 +49,10 @@
 }
 
 
-
 .info-block {
   display: flex;
-  column-gap: 49px;
+  flex-wrap: wrap-reverse;
+  gap: 49px;
   justify-content: space-between;
 }
 
@@ -120,3 +125,34 @@ item-subtitle {
   font-weight: 400;
 }
 
+@media (max-width: 1210px) {
+  .info-block {
+    justify-content: center;
+  }
+
+  .info-block-item {
+    padding: 15px;
+  }
+
+  .info-block-right {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .block-footer-title {
+    font-size: min(32px, 7vw);
+  }
+
+  .block {
+    padding: 170px 24px;
+  }
+}
+@media (max-width: 760px) {
+  .info-block-right {
+    justify-content: center;
+  }
+  .title {
+    font-size: 10vw;
+    text-align: center;
+  }
+}

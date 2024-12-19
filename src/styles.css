@@ -7,7 +7,8 @@
 
 :root {
   --unbounded: "Unbounded";
-  --accent-color: #FFBB00
+  --accent-color: #FFBB00;
+  --max-width: 1920px
 }
 
 html, body {
@@ -58,8 +59,8 @@ input {
 }
 
 .circle {
-  width: 295px;
-  height: 295px;
+  min-width: 295px;
+  min-height: 295px;
   background-color: #FFBB00;
   border-radius: 50%;
   display: flex;
@@ -73,9 +74,18 @@ input {
   justify-content: center;
   align-items: center;
 }
+
 .circle-text {
   text-align: center;
+  text-wrap: nowrap;
 }
+
 .phone {
   line-height: 20px;
+}
+
+@media (max-width: 460px) {
+  .btn {
+    font-size: 14px;
+  }
 }
