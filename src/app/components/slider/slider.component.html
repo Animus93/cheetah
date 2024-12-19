@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="slider-wrapper">
+    <button (click)="prev()" class="slide-control">
+      <img src="assets/icons/arrow.svg" alt="кнопка управления слайдером">
+    </button>
+    <div class="slider">
+      <div #sliderLine class="slider-line">
+        <img #sliderItem class="slider-item" src="assets/images/slider-image1.jpg">
+        <img #sliderItem class="slider-item" src="assets/images/slider-image1.png">
+        <img #sliderItem class="slider-item" src="assets/images/slider1.svg">
+      </div>
+    </div>
+    <button (click)="next()" class="slide-control">
+      <img class="right-arrow" src="assets/icons/arrow.svg" alt="кнопка управления слайдером">
+    </button>
+  </div>
+</div>

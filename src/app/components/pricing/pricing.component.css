@@ -86,7 +86,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   column-gap: 40px;
-  padding: 0 7%;
+  padding: 0 7% 6% 7%
 }
 
 .block-form {
@@ -138,6 +138,3 @@ img {
   color: var(--accent-color);
 }
 
-.bold {
-  font-weight: 700;
-}

@@ -1,6 +1,21 @@
-.container{
+.container {
   display: flex;
   flex-direction: column;
   background: rgb(24, 22, 22);
+}
 
+.pricing {
+  position: relative;
+}
+
+.bottom-line {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.footer {
+  padding: 0 110px 45px 110px;
 }

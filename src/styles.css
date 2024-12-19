@@ -18,6 +18,7 @@ html, body {
 a {
   text-decoration: none;
 }
+
 .btn {
   &:hover {
     background: rgb(255, 211, 96);
@@ -42,4 +43,39 @@ a {
   font-family: Unbounded;
   font-size: 1.125rem;
   font-weight: 700;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+input {
+  outline: none;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.circle {
+  width: 295px;
+  height: 295px;
+  background-color: #FFBB00;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.circle-text {
+  text-align: center;
+}
+.phone {
+  line-height: 20px;
 }

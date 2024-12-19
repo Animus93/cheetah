@@ -1,0 +1,64 @@
+.container {
+  background: url("../../../assets/images/cheetah2.svg");
+  background-size: contain;
+  background-position: right top;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.overpricing {
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+  padding: 6%;
+  box-sizing: border-box;
+}
+
+.overpricing-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.accent {
+
+  color: var(--accent-color);
+}
+
+.overpricing-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+  width: 100%;
+  max-width: 666px;
+}
+
+.item {
+  background-color: #3B3B3B;
+  border-radius: 12px;
+  display: flex;
+  column-gap: 24px;
+  padding: 16px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.item-title {
+  font-family: Muller;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  flex: 1;
+  text-align: center;
+}
+
+.item-price {
+  color: rgb(59, 59, 59);
+  font-size: 24px;
+  font-weight: 700;
+  padding: 16px;
+  box-sizing: border-box;
+  background-color: #FFBB00;
+  border-radius: 10px;
+}
