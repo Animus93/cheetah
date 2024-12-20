@@ -9,20 +9,22 @@
         </div>
       </div>
       <div class="block space-between">
-        <div class="form">
+        <div class="form" [formGroup]="form">
           <div class="form-block">
-            <input class="form-input" placeholder="Имя">
-            <input class="form-input" placeholder="Телефон">
+            <input class="form-input" formControlName="name" placeholder="Имя">
+            <input class="form-input" formControlName="phone" placeholder="Номер телефона" type="tel">
           </div>
           <div class="form-block">
-            <button class="btn">Вызвать эвакуатор</button>
+            <button class="btn" (click)="onSubmit()" [disabled]="form.invalid"
+                    [class.disabled]="form.invalid">Вызвать эвакуатор
+            </button>
             <div class="consent">
               <input type="checkbox">
               <div class="consent-content">Подтверждаю свои данные и даю своё согласие на их обработку.</div>
             </div>
           </div>
         </div>
-        <div class="circle">
+        <a href="tel:+79590000000" class="circle">
           <div class="circle-content">
             <img src="assets/icons/phone.svg">
             <div class="circle-text">
@@ -31,9 +33,9 @@
               <p class="bold phone">+7 959 000 00 00</p>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
-<!--    <div class="operator"></div>-->
+    <!--    <div class="operator"></div>-->
   </div>
 </div>

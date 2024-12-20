@@ -66,6 +66,18 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+  transition: ease-in-out .2s;
+}
+
+.circle:hover {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.circle:active {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .circle-content {
@@ -83,6 +95,7 @@ input {
 .phone {
   line-height: 20px;
 }
+
 
 @media (max-width: 460px) {
   .btn {

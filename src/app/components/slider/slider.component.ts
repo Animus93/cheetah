@@ -68,7 +68,6 @@ export class SliderComponent implements OnInit, AfterViewInit {
   }
 
   rollSlide(): void {
-    console.log('rollSlide')
     this.sliderLine.nativeElement.style.transform = 'translate(-' + this.count * this.width + 'px)';
   }
 }

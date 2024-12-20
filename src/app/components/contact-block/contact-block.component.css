@@ -103,6 +103,12 @@
   font-size: 12px;
   font-weight: 400;
 }
+.disabled {
+  background-color: grey;
+  color: white;
+  cursor: auto;
+
+}
 
 @media (max-width: 1210px) {
   .block {
@@ -132,4 +138,3 @@
   }
 
   }
-}

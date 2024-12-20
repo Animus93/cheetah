@@ -24,11 +24,13 @@
 </div>
 <div class="block">
   <div class="block-content">
-    <div class="block-form">
-      <input class="form-input" placeholder="Имя">
-      <input class="form-input" placeholder="Номер телефона" type="number">
-      <textarea class="form-input" placeholder="Комментарий"></textarea>
-      <button class="btn">Вызвать эвакуатор</button>
+    <div class="block-form" [formGroup]="form">
+      <input class="form-input" formControlName="name" placeholder="Имя">
+      <input class="form-input" formControlName="phone" placeholder="Номер телефона" type="tel">
+      <textarea class="form-input" formControlName="comment" placeholder="Комментарий"></textarea>
+      <button class="btn" (click)="onSubmit()" [disabled]="form.invalid"
+              [class.disabled]="form.invalid">Вызвать эвакуатор
+      </button>
     </div>
     <div class="block-info">
       <div class="block-info-title">Приедем уже через <label class="accent">15 минут</label></div>

@@ -144,7 +144,11 @@ img {
 .accent {
   color: var(--accent-color);
 }
-
+.disabled {
+  background-color: grey;
+  color: white;
+  cursor: auto;
+}
 @media (max-width: 1210px) {
   .block-content {
     justify-content: center;
