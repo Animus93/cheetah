@@ -1,0 +1,15 @@
+<div class="form" [formGroup]="loginForm">
+  <div class="header">
+    <div class="form-title">Авторизация</div>
+    <div class="link" (click)="setEvent()">Зарегистрироваться</div>
+  </div>
+  <div class="form-block">
+    <input formControlName="login" class="form-input" placeholder="Логин">
+    <input formControlName="password" class="form-input" placeholder="Пароль">
+  </div>
+  <div class="form-row">
+    <button class="btn" [routerLink]="'/start'">На сайт</button>
+    <button class="btn" (click)="onSubmit()" [class.disabled]="loginForm.invalid" [disabled]="loginForm.invalid">Войти
+    </button>
+  </div>
+</div>

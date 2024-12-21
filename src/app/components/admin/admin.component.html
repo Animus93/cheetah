@@ -1,0 +1,61 @@
+<div class="container">
+  <div class="navigation">
+    <img class="logo" src="assets/icons/mobile-logo.svg">
+    <a class="item" routerLink="orders" routerLinkActive="active-tab">
+      <img src="assets/icons/orders.svg" alt="заказы">
+      <div>Заказы</div>
+    </a>
+    <a class="item" routerLink="clients" routerLinkActive="active-tab">
+      <img src="assets/icons/clients.svg" alt="клиенты">
+      <div>Клиенты</div>
+    </a>
+    <a class="item disabled">
+      <img src="assets/icons/calc.svg" alt="Тарифы">
+      <div>Тарифы</div>
+    </a>
+    <a class="item" routerLink="trucks" routerLinkActive="active-tab">
+      <img src="assets/icons/truck.svg" alt="Грузовики">
+      <div>Эвакуаторы</div>
+    </a>
+    <a class="item" routerLink="/start" routerLinkActive="active-tab">
+      <img src="assets/icons/arrow.svg" alt="Назад">
+      <div>На сайт</div>
+    </a>
+  </div>
+  <div class="content">
+    <div class="header">
+      <div class="header-content">
+        <div class="header-item">
+          <div class="time bold">{{ currentTime | date: 'HH:mm' }}</div>
+          <div class="date">{{ currentTime  | date: 'd MMM. yyyy' }}</div>
+        </div>
+        <div class="header-item">
+          <img src="assets/icons/bell.svg">
+          <img src="assets/icons/admin.svg">
+          <div class="bold date">{{ userName }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="settings">
+        <div class="settings-item">
+          <div class="item-title">Показывать строк</div>
+          <select class="select">
+            <option value="10">10</option>
+            <option value="10">15</option>
+            <option value="10">30</option>
+            <option value="10">50</option>
+            <option value="10">100</option>
+          </select>
+        </div>
+        <div class="settings-item">
+          <div class="item-title">Поиск</div>
+          <input class="search">
+        </div>
+      </div>
+      <div class="outlet">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

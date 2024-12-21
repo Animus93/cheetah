@@ -1,0 +1,17 @@
+<div class="form" [formGroup]="registrationForm">
+  <div class="header">
+    <div class="form-title">Регистрация</div>
+    <div class="link" (click)="setEvent()">Есть аккаунт? Войти</div>
+  </div>
+  <div class="form-block">
+    <input formControlName="login" class="form-input" placeholder="Логин">
+    <input formControlName="password" class="form-input" placeholder="Пароль">
+    <input formControlName="email" class="form-input" placeholder="Почта">
+  </div>
+  <div class="form-row">
+    <button class="btn" [routerLink]="'/start'">На сайт</button>
+    <button class="btn" (click)="onSubmit()" [class.disabled]="registrationForm.invalid"
+            [disabled]="registrationForm.invalid">Регистрация
+    </button>
+  </div>
+</div>

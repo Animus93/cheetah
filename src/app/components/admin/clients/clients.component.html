@@ -1,0 +1,24 @@
+<div class="container">
+  <table class="content">
+    <thead>
+    <tr>
+      <th>№</th>
+      <th>Фамилия</th>
+      <th>Имя</th>
+      <th>Отчество</th>
+      <th>Номер телефона</th>
+    </tr>
+    </thead>
+    <tbody>
+      @for (item of [].constructor(10); track item; let i = $index) {
+        <tr class="row">
+          <td>{{ i + 1 }}</td>
+          <td>Иванов</td>
+          <td>Иван</td>
+          <td>Иванович</td>
+          <td>+7 959 000 00 00</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>

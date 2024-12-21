@@ -1,0 +1,26 @@
+<div class="container">
+  <table class="content">
+    <thead>
+    <tr>
+      <th>№</th>
+      <th>Фото</th>
+      <th>Название</th>
+      <th>Грузоподъемность</th>
+      <th>Цена</th>
+      <th>Номер водителя</th>
+    </tr>
+    </thead>
+    <tbody>
+      @for (item of [].constructor(20); track item; let i = $index) {
+        <tr class="row">
+          <td>{{i +1}}</td>
+          <td><img src="assets/images/truck-photo.svg" alt="фото"></td>
+          <td>HYUNDAI</td>
+          <td>до 4900 кг</td>
+          <td>3 790</td>
+          <td>+7 959 000 00 00</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,28 @@
+<div class="container">
+  <table class="content">
+    <thead>
+    <tr>
+      <th>Номер заказа</th>
+      <th>Дата</th>
+      <th>Услуга</th>
+      <th>Стоимость, руб</th>
+      <th>Клиент</th>
+      <th>Статус</th>
+      <th>Примечание</th>
+    </tr>
+    </thead>
+    <tbody>
+      @for (item of [].constructor(20); track item; let i = $index) {
+        <tr class="row">
+          <td>{{i +1}}</td>
+          <td>19.12.2024</td>
+          <td>Эвакуатор легковое авто</td>
+          <td>1 790</td>
+          <td>Иванов И.И</td>
+          <td>В работе</td>
+          <td>Скидка</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>
